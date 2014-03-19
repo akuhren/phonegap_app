@@ -1,0 +1,1776 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin: 10px 0px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  display: block;
+  margin: 0px auto 10px;
+  padding-top: 18px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  font-family: Oswald, sans-serif;
+  color: black;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+}
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.button.billet-knap {
+  position: static;
+  display: block;
+  width: auto;
+  max-width: 150px;
+  float: none;
+}
+.logo {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: block;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-top: 10px;
+  padding-left: 18px;
+}
+.bund {
+  height: 100%;
+  padding-bottom: 68px;
+  background-image: -webkit-linear-gradient(white, #22a6b3);
+  background-image: -o-linear-gradient(white, #22a6b3);
+  background-image: linear-gradient(white, #22a6b3);
+}
+.bund1 {
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 56px;
+}
+.forestilling-overskrift {
+  height: 25px;
+  background-color: #22a6b3;
+}
+.navigation-bar {
+  background-color: white;
+}
+.menu-open {
+  padding: 2px 10px;
+}
+@media (max-width: 991px) {
+  h3 {
+    display: block;
+    margin: 0px auto 1px;
+    padding-top: 18px;
+    border-bottom: 3px solid black;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: center;
+  }
+  h6 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 9px;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+  }
+  .logo {
+    position: static;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-top: 3px;
+  }
+  .tilbagepil {
+    margin-top: 6px;
+    padding-top: 0px;
+  }
+  .program-fotos {
+    display: block;
+    margin: 8px auto 4px;
+    border: 2px solid #22a6b3;
+    border-radius: 8px;
+  }
+  .forestilling-overskrift {
+    height: 25px;
+    background-color: #22a6b3;
+  }
+  .navigation-bar-ikon {
+    padding: 2px 10px;
+  }
+  .navigation-bar {
+    max-width: 991px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px 10px;
+    border-bottom: 1px none black;
+    background-color: white;
+  }
+  .forestilling11 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .forestilling10 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .forestilling8 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .forestilling7 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .forestilling6 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .forestilling5 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .forestilling4.margin {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .margin20px {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 767px) {
+  h3 {
+    display: block;
+    margin: 0px auto 1px;
+    padding-top: 18px;
+    padding-left: 0px;
+    border-bottom: 3px solid black;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: center;
+  }
+  h5 {
+    position: static;
+    left: -1px;
+    width: 250px;
+    height: 21px;
+    margin: 0px 20px 0px 0px;
+    padding-left: 0px;
+    float: none;
+    clear: none;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+  }
+  h6 {
+    margin-top: 0px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .button {
+    display: block;
+    margin-top: 15px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-weight: 700;
+  }
+  .button.momentum-knap {
+    width: 100%;
+    height: 22px;
+    margin: 0px auto 4px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: 2px solid #22a6b3;
+    border-radius: 8px;
+    background-color: white;
+    font-family: Oswald, sans-serif;
+    color: #cc1d7a;
+    line-height: 10px;
+  }
+  .button.momentum-knap:active {
+    background-color: #a3ccd6;
+  }
+  .button.billet-knap {
+    width: 300px;
+    height: 30px;
+    max-width: 200px;
+    margin: 0px auto 4px;
+    padding-top: 9px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: white;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 24px;
+    line-height: 10px;
+  }
+  .button.mere-knap {
+    margin-right: 60px;
+    color: black;
+  }
+  .button.mere-knap:active {
+    background-color: #a3ccd6;
+  }
+  .button.uteater-knap {
+    color: #f24a07;
+  }
+  .button.menuknap {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  .button.billetknap {
+    width: 100%;
+    height: 22px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 5px 5px 0px 6px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-family: Oswald, sans-serif;
+    color: black;
+    line-height: 10px;
+  }
+  .logo {
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-top: 2px;
+    padding-left: 10px;
+  }
+  .bund {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .bund1 {
+    padding-bottom: 34px;
+  }
+  .bund1.bund2.bund3 {
+    position: static;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .tilbagepil {
+    margin-top: 6px;
+  }
+  .program-fotos {
+    width: 77px;
+    margin-left: 60px;
+    padding-left: 0px;
+  }
+  .forestillinger-tekst {
+    margin-right: -68px;
+    padding-top: 2px;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .forestilling-overskrift {
+    height: 30px;
+    border-bottom: 1px solid black;
+    background-color: #22a6b3;
+  }
+  .navigation-bar-ikon {
+    padding: 2px 10px;
+  }
+  .navigation-bar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+    background-color: white;
+  }
+  .navigation-bar.navbarstreg.navbaringenstreg {
+    border-bottom-style: none;
+  }
+  .forestilling-overskrift2 {
+    margin-bottom: 0px;
+  }
+  .dato-kalender._11april {
+    margin-bottom: 317px;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+  }
+  .dato-kalender._12april {
+    display: block;
+    width: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    float: none;
+  }
+  .logo-baggrund {
+    margin-top: 5px;
+  }
+  .program-md-dag {
+    position: static;
+    left: 0px;
+    top: 0px;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-right: 10px;
+  }
+  .month {
+    width: 100%;
+    height: 28px;
+    padding-top: 4px;
+    float: right;
+    border-top: 1px solid #22a6b3;
+    border-bottom: 1px solid #22a6b3;
+    background-color: white;
+  }
+  .dato {
+    width: 75px;
+    height: 75px;
+    font-family: Oswald, sans-serif;
+    font-size: 60px;
+  }
+  .dag {
+    position: static;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .dag.prog-md-dg {
+    margin-left: -130px;
+  }
+  .program-md {
+    width: auto;
+    height: 21px;
+    max-width: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    float: left;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .datodiv {
+    position: relative;
+    width: 75%;
+    margin-top: 3px;
+    margin-left: -14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: left;
+    border-bottom: 1px solid #a3ccd6;
+    border-left: 0px solid #a3ccd6;
+  }
+  .datodiv.datodivmomentumcafe {
+    margin-right: 11px;
+    margin-left: -52px;
+  }
+  .ikondiv {
+    position: relative;
+    width: 28%;
+    float: left;
+    font-family: Oswald, sans-serif;
+    font-size: 60px;
+    line-height: 44px;
+  }
+  .ikondiv.datokolonne {
+    width: 25%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .momentumknap.info-knap {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    float: none;
+    clear: both;
+    border: 3px solid #5bf7fc;
+    border-radius: 5px;
+    background-color: #5bf7fc;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .momentumknap.info-knap.uteater {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    float: none;
+    clear: both;
+    border: 3px solid #ff7300;
+    border-radius: 5px;
+    background-color: #ff7300;
+    color: black;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .momentumknap.info-knap.caf-knap {
+    border-color: #c8ff00;
+    background-color: #c8ff00;
+  }
+  .momentumknap.info-knap.v-rkstedsscenen {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    float: none;
+    clear: both;
+    border: 3px solid #ffd000;
+    border-radius: 5px;
+    background-color: #ffd000;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .momentumknap.info-knap.momentumcafe {
+    border-color: #ff007b;
+    background-color: #ff007b;
+  }
+  .forestillingstekst.testforestillingtest {
+    position: relative;
+    margin-left: 5px;
+    float: left;
+  }
+  .forestillingstekst.testforestillingtest.tid-sted-rk {
+    position: relative;
+    left: 0px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 2px;
+  }
+  .info-div {
+    height: 20px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+  }
+  .scenediv {
+    position: relative;
+    display: block;
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    float: left;
+  }
+  .test-img {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    float: left;
+    border: 1px solid #5bf7fc;
+    border-radius: 15px;
+    background-color: #5bf7fc;
+  }
+  .test-img.uteater {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    float: left;
+    border: 1px solid #ff7300;
+    border-radius: 15px;
+    background-color: #ff7300;
+  }
+  .test-img.v-rksedssc {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    float: left;
+    border: 1px solid #ffd000;
+    border-radius: 15px;
+    background-color: #ffd000;
+  }
+  .test-img.spillested-kolonne {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    float: left;
+    border: 1px solid #ff007b;
+    border-radius: 15px;
+    background-color: #ff007b;
+  }
+  .test-img.spillested-kolonne.cirkel-horisontalt {
+    margin-top: 5px;
+  }
+  .test-img.teater95b {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    float: left;
+    border: 1px solid #c8ff00;
+    border-radius: 15px;
+    background-color: #c8ff00;
+  }
+  .test-img.v-rkstedssc {
+    float: left;
+    border: 1px solid #ffd000;
+    border-radius: 15px;
+    background-color: #ffd000;
+  }
+  .tekst-titel {
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .ingen-knap {
+    color: white;
+  }
+  .forestilling11 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling10 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling8 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling7 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling6 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling5 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling4.margin {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling3.margin {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling2.margin {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .forestilling1.margin {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .kort-pr-sentation {
+    position: static;
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    position: static;
+    left: 0px;
+    top: 0px;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    margin: 0px auto;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    float: none;
+    clear: none;
+  }
+  h3 {
+    height: 44px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 18px;
+    padding-bottom: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    direction: ltr;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+  h5 {
+    position: static;
+    left: -74px;
+    top: 0px;
+    bottom: 0px;
+    width: 230px;
+    height: 21px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    float: right;
+    clear: none;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  h6 {
+    height: auto;
+    margin: 0px 9px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    background-color: transparent;
+    font-family: Oswald, sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .button {
+    position: static;
+    display: block;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    color: #2cb8a7;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .button.momentum-knap {
+    width: 100%;
+    height: 22px;
+    margin: 0px 0px 4px;
+    padding: 4px 2px 0px;
+    border-style: solid;
+    border-color: #ff007b;
+    border-radius: 4px;
+    background-color: #ff007b;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 14px;
+    line-height: 9px;
+    text-align: center;
+  }
+  .button.momentum-knap:active {
+    background-color: #a3ccd6;
+  }
+  .button.billet-knap {
+    width: 236px;
+    height: 35px;
+    max-width: 230px;
+    margin: 0px auto 10px;
+    padding: 12px 2px 2px;
+    float: none;
+    border-color: black;
+    border-radius: 0px;
+    color: black;
+    font-size: 24px;
+  }
+  .button.mere-knap {
+    color: black;
+  }
+  .button.mere-knap:active {
+    background-color: #a3ccd6;
+  }
+  .button.uteater-knap {
+    border-color: #ff7300;
+    background-color: #ff7300;
+    color: black;
+  }
+  .button.uteater-knap:active {
+    background-color: #a3ccd6;
+  }
+  .button.uteater-knap.teater95b {
+    border-color: #c8ff00;
+    background-color: #c8ff00;
+  }
+  .button.vis-mere {
+    width: 100%;
+    border-color: black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+  }
+  .button.vis-mere.vis-mere-knap {
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-color: black;
+    background-color: white;
+  }
+  .button.menuknap {
+    height: 36px;
+    margin-top: 28px;
+    padding-top: 6px;
+    border-radius: 4px;
+  }
+  .button.billetknap {
+    width: 100%;
+    height: 35px;
+    margin: 0px 0px 6px;
+    padding: 10px 5px 0px 6px;
+    border-radius: 4px;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 15px;
+    line-height: 9px;
+  }
+  .button.billetknap.billetmenu {
+    width: 30%;
+    margin: 15px auto;
+  }
+  .button.momentum-knap {
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    border-color: #5bf7fc;
+    background-color: #5bf7fc;
+  }
+  .button.uteater-knap {
+    height: 35px;
+    padding-top: 10px;
+    border-color: #ff7300;
+    background-color: #ff7300;
+  }
+  .button.momentum-cafe-knap {
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    border-color: #ff007b;
+    background-color: #ff007b;
+  }
+  .button.vaerkstedsscenen-knap {
+    border-color: #ffd000;
+    border-radius: 4px;
+    background-color: #ffd000;
+  }
+  .button.skraateater {
+    border-color: red;
+    background-color: red;
+  }
+  .button.teater95b {
+    border-color: #6aff00;
+    background-color: #6aff00;
+  }
+  .button.stem-knap {
+    width: 200px;
+    height: 36px;
+    margin: 15px auto;
+    padding-top: 7px;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .logo {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 4px;
+    padding-left: 0px;
+  }
+  .logo.hvid-streg {
+    padding-top: 0px;
+    border: 3px solid white;
+  }
+  .logo.sort-streg {
+    border: 3px solid white;
+  }
+  .logo.hvid-strreg {
+    border: 1px solid black;
+  }
+  .bund {
+    max-height: 500px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    line-height: 21px;
+  }
+  .bund1 {
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 180px;
+    border-bottom-style: none;
+    border-bottom-color: transparent;
+    background-image: -webkit-linear-gradient(white, #22a6b3);
+    background-image: -o-linear-gradient(white, #22a6b3);
+    background-image: linear-gradient(white, #22a6b3);
+  }
+  .bund1.bund2 {
+    background-image: -webkit-linear-gradient(#22a6b3, black);
+    background-image: -o-linear-gradient(#22a6b3, black);
+    background-image: linear-gradient(#22a6b3, black);
+  }
+  .bund1.bund2.bund3 {
+    height: 350px;
+    padding-bottom: 0px;
+    background-image: -webkit-linear-gradient(white 1%, #22a6b3 31%, #105056 55%, black);
+    background-image: -o-linear-gradient(white 1%, #22a6b3 31%, #105056 55%, black);
+    background-image: linear-gradient(white 1%, #22a6b3 31%, #105056 55%, black);
+  }
+  .bund1.bund4 {
+    height: 410px;
+    margin-top: 1px;
+    padding-bottom: 0px;
+    background-image: -webkit-linear-gradient(#22a6b3, #22a6b3 15%, black 79%);
+    background-image: -o-linear-gradient(#22a6b3, #22a6b3 15%, black 79%);
+    background-image: linear-gradient(#22a6b3, #22a6b3 15%, black 79%);
+  }
+  .tilbagepil {
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  .tilbage {
+    padding: 6px;
+    border: 2px solid #98defa;
+    border-radius: 13px;
+    background-image: none;
+  }
+  .program-fotos {
+    display: block;
+    width: 77px;
+    margin: 8px auto 1px;
+    padding: 0px;
+    float: left;
+    border: 2px solid #22a6b3;
+    border-radius: 8px;
+  }
+  .program-fotos.billede-krop-sjael-ar {
+    width: auto;
+    height: 77px;
+  }
+  .forestillinger-tekst {
+    position: static;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    width: 100%;
+    min-width: 215px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: none;
+    clear: none;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+  .forestillinger-tekst.momentum {
+    color: #de1f1f;
+  }
+  .forestilling-overskrift {
+    position: static;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0px none black;
+    background-color: transparent;
+    font-family:'Helvetica Neue';
+  }
+  .forestilling-overskrift.overskrift-streg {
+    margin-bottom: 0px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: #45cad6;
+  }
+  .forestilling-overskrift.overskrift-streg.blandede-bolsjer {
+    background-image: -webkit-linear-gradient(288deg, white, red 14%, white 25%, red 55%, white 77%, red 88%, white);
+    background-image: -o-linear-gradient(198deg, white, red 14%, white 25%, red 55%, white 77%, red 88%, white);
+    background-image: linear-gradient(198deg, white, red 14%, white 25%, red 55%, white 77%, red 88%, white);
+  }
+  .forestilling-overskrift.overskrift-streg.overskrift-dobbelt-linie {
+    height: 55px;
+    min-height: 0px;
+  }
+  .forestillinger-mere {
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    margin-top: 0px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    float: right;
+    direction: ltr;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #22a6b3;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .navigation-bar-ikon {
+    padding: 1px 10px 0px;
+  }
+  .navigation-bar-ikon.w--open {
+    background-color: white;
+    color: black;
+  }
+  .navigation-bar {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px 0px;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    background-color: white;
+  }
+  .navigation-bar.navbarstreg {
+    border-bottom-style: none;
+  }
+  .forestilling-overskrift2 {
+    height: 42px;
+    margin-bottom: 0px;
+    padding-top: 18px;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .dato-kalender {
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+    border: 0px none black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-decoration: none;
+  }
+  .dato-kalender._11april {
+    margin-bottom: 193px;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+  }
+  .dato-kalender._12april {
+    margin-right: 0px;
+    margin-bottom: 141px;
+    padding-right: 40px;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+  }
+  .dato-kalender._13april {
+    margin-bottom: 154px;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+  }
+  .kort {
+    display: block;
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    border: 3px solid #18727a;
+    border-radius: 10px;
+    box-shadow: none;
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .kort.det-skraa-teater {
+    height: 200px;
+  }
+  .kort.gul-streg {
+    border-color: #ffd000;
+  }
+  .kort.lysgr-n-streg {
+    border-color: #6aff00;
+  }
+  .kort.turkis-streg {
+    border-color: #5bf7fc;
+    box-shadow: none;
+  }
+  .kort.violet-streg {
+    border-color: #df74fc;
+  }
+  .kort.r-d-streg {
+    margin-top: 10px;
+    border-color: red;
+  }
+  .kort.orange-streg {
+    border-color: #ff7300;
+    box-shadow: none;
+  }
+  .map {
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px none white;
+    background-image: -webkit-linear-gradient(#22a6b3, #18727a);
+    background-image: -o-linear-gradient(#22a6b3, #18727a);
+    background-image: linear-gradient(#22a6b3, #18727a);
+  }
+  .map.map2bagg {
+    padding-top: 10px;
+    background-image: -webkit-linear-gradient(#18727a, #0b3033), -webkit-linear-gradient(#22a6b3, #18727a);
+    background-image: -o-linear-gradient(#18727a, #0b3033), -o-linear-gradient(#22a6b3, #18727a);
+    background-image: linear-gradient(#18727a, #0b3033), linear-gradient(#22a6b3, #18727a);
+  }
+  .map.map2bagg.mapsolo {
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+  }
+  .map.map3bagg {
+    padding-top: 10px;
+    background-image: -webkit-linear-gradient(#0b3033, black), -webkit-linear-gradient(#22a6b3, #18727a);
+    background-image: -o-linear-gradient(#0b3033, black), -o-linear-gradient(#22a6b3, #18727a);
+    background-image: linear-gradient(#0b3033, black), linear-gradient(#22a6b3, #18727a);
+  }
+  .map.mapbagg3b {
+    padding-top: 10px;
+    background-image: -webkit-linear-gradient(black, #0b3033);
+    background-image: -o-linear-gradient(black, #0b3033);
+    background-image: linear-gradient(black, #0b3033);
+  }
+  .map.map2bbagg {
+    padding-top: 10px;
+    background-image: -webkit-linear-gradient(#0b3033, #18727a);
+    background-image: -o-linear-gradient(#0b3033, #18727a);
+    background-image: linear-gradient(#0b3033, #18727a);
+  }
+  .map.map1bbagg {
+    background-image: -webkit-linear-gradient(#18727a, #22a6b3);
+    background-image: -o-linear-gradient(#18727a, #22a6b3);
+    background-image: linear-gradient(#18727a, #22a6b3);
+  }
+  .map.map1bagg {
+    padding-top: 0px;
+  }
+  .map.mapbaggkort {
+    background-image: -webkit-linear-gradient(#22a6b3, black);
+    background-image: -o-linear-gradient(#22a6b3, black);
+    background-image: linear-gradient(#22a6b3, black);
+  }
+  .kort-kolonner {
+    border: 1px solid black;
+  }
+  .kort-kolonner.bund3 {
+    border-width: 0px;
+  }
+  .menu-open {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    float: right;
+    border: 1px solid black;
+    background-color: #a3ccd6;
+    font-family: Oswald, sans-serif;
+  }
+  .menu-open:hover {
+    color: #c20202;
+  }
+  .menu-open:active {
+    color: black;
+  }
+  .menu-open:focus {
+    color: black;
+  }
+  .menu-open.w--current {
+    color: white;
+  }
+  .menu-open.w--current:focus {
+    color: white;
+  }
+  .body-baggrund {
+    background-color: white;
+  }
+  .logo-baggrund {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: white;
+  }
+  .forestilling-tekst {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 10px 10px;
+    float: none;
+    direction: ltr;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    list-style-type: none;
+  }
+  .dato-program {
+    padding: 5px;
+    float: left;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .dato-kolonne {
+    position: static;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 0;
+    display: block;
+    height: 81px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .program-dato-tekst {
+    position: static;
+    display: block;
+    width: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: none;
+    color: black;
+  }
+  .program-dato-tekst-1 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    background-color: white;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+  }
+  .momentum {
+    position: static;
+    left: 0px;
+    top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px 0px 4px;
+    font-family: Oswald, sans-serif;
+    color: #de1f72;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+  }
+  .forestillinger-teater-navn {
+    position: static;
+    width: 100%;
+    height: 20px;
+    margin: 10px 0px;
+    float: none;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+  }
+  .section {
+    margin-top: 0px;
+  }
+  .section.section-2 {
+    height: 39px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    border-top: 1px solid black;
+  }
+  .section-3 {
+    height: 40px;
+    background-color: white;
+  }
+  .billedblok {
+    width: 24%;
+    margin: 0px 26px 4px 12px;
+    padding-right: 0px;
+    float: left;
+  }
+  .billed-kol {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .info-blok {
+    border-top: 2px none #a3ccd6;
+    background-color: rgba(163, 204, 214, 0.2);
+  }
+  .beskrivelse {
+    position: static;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    float: none;
+    clear: none;
+  }
+  .hel-tekst {
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .dato-link {
+    width: 76px;
+  }
+  .program-dato-column {
+    position: relative;
+    left: -24px;
+    top: 0px;
+    padding-left: 10px;
+    background-color: white;
+  }
+  .program-md-dag {
+    position: static;
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .forestilling-titel {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+  }
+  .linket-tekst {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .month {
+    width: 100%;
+    height: 28px;
+    margin-top: 0px;
+    padding-top: 2px;
+    float: right;
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    background-color: #a3ccd6;
+  }
+  .month.bundmonth {
+    width: 100%;
+  }
+  .dato {
+    position: static;
+    width: auto;
+    height: 75px;
+    max-width: 90px;
+    min-width: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    float: left;
+    font-family: Oswald, sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  .dag {
+    position: static;
+    padding-left: 0px;
+  }
+  .program-tekst {
+    position: static;
+    width: auto;
+    min-width: 230px;
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+  .program-tekst.uteater {
+    float: left;
+    color: #f24a07;
+  }
+  .program-md {
+    position: static;
+    left: 1px;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    width: auto;
+    max-width: 90px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    clear: none;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .program-tekstblok {
+    width: 100%;
+    background-color: white;
+  }
+  .stedpink {
+    height: 14px;
+    min-width: 14px;
+    background-color: #ff005d;
+  }
+  .ord {
+    color: black;
+  }
+  .datodiv {
+    position: relative;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    width: 75%;
+    height: auto;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: -14px;
+    padding-top: 0px;
+    float: left;
+    clear: none;
+    border-bottom: 1px solid #a3ccd6;
+    border-left: 0px solid #a3ccd6;
+  }
+  .ikondiv {
+    position: relative;
+    width: 28%;
+    float: left;
+  }
+  .ikondiv.datokolonne {
+    height: 385px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: rgba(163, 204, 214, 0.2);
+  }
+  .ikondiv.datokolonne.datokolonne1 {
+    height: 300px;
+  }
+  .ikondiv.datokolonne.datokolonne2 {
+    height: 400px;
+  }
+  .ikondiv.datokolonne.datokolonne3 {
+    height: 300px;
+  }
+  .momentumknap {
+    position: relative;
+    display: inline;
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    float: left;
+    clear: both;
+    border-width: 1px;
+    background-color: #e600ff;
+    color: #e600ff;
+    font-size: 1px;
+    line-height: 0px;
+  }
+  .momentumknap.info-knap {
+    width: 103px;
+    height: 33px;
+    margin-top: 5px;
+    margin-left: 4px;
+    padding-top: 8px;
+    border-width: 3px;
+    border-color: #5bf7fc;
+    border-radius: 5px;
+    background-color: #5bf7fc;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .momentumknap.info-knap.uteater {
+    width: 103px;
+    height: 33px;
+    margin-left: 0px;
+    padding-top: 8px;
+    float: left;
+    border-width: 3px;
+    border-color: #ff7300;
+    background-color: #ff7300;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .momentumknap.info-knap.caf-knap {
+    width: 103px;
+    margin-left: 2px;
+    padding-top: 8px;
+    border-width: 3px;
+    border-color: #c8ff00;
+    border-radius: 5px;
+    background-color: #c8ff00;
+  }
+  .momentumknap.info-knap.v-rkstedsscenen {
+    width: 103px;
+    height: 33px;
+    margin-left: 2px;
+    padding-top: 8px;
+    border-color: #ffd000;
+    border-radius: 5px;
+    background-color: #ffd000;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .momentumknap.info-knap.momentumcafe {
+    width: 103px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    padding-top: 8px;
+    float: left;
+    border-width: 3px;
+    border-color: #df74fc;
+    border-radius: 5px;
+    background-color: #df74fc;
+  }
+  .momentumknap.detskraateater {
+    margin-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    float: left;
+    border-color: red;
+    background-color: red;
+  }
+  .forestillingstekst {
+    position: absolute;
+    left: auto;
+    display: inline-block;
+    margin-left: 5px;
+    float: right;
+    clear: both;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .forestillingstekst.testforestillingtest {
+    position: relative;
+    left: 0px;
+    display: block;
+    margin-right: -11px;
+    margin-left: 5px;
+    float: left;
+    clear: none;
+    border-radius: 2px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+  }
+  .momentum-ill {
+    position: relative;
+    margin-left: 15px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .info-div {
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    margin-left: 4px;
+    border-top-style: none;
+    border-top-width: 1px;
+  }
+  .scenediv {
+    position: relative;
+    display: block;
+    width: 33%;
+    margin: 2px auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    float: left;
+    clear: none;
+  }
+  .body-div {
+    overflow-x: visible;
+    overflow-y: visible;
+    height: auto;
+    margin-top: 9px;
+  }
+  .test-img {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+    margin-left: 3px;
+    float: left;
+    border: 1px solid #5bf7fc;
+    border-radius: 15px;
+    background-color: #5bf7fc;
+  }
+  .test-img.uteater {
+    margin-top: 0px;
+    margin-left: 3px;
+    border-color: #ff7300;
+    background-color: #ff7300;
+  }
+  .test-img.v-rksedssc {
+    margin-top: 0px;
+    margin-left: 3px;
+    border-color: #ffd000;
+    background-color: #ffd000;
+  }
+  .test-img.spillested-kolonne {
+    margin-top: 0px;
+    margin-left: 3px;
+    padding-left: 0px;
+    border-color: #df74fc;
+    background-color: #df74fc;
+  }
+  .test-img.teater95b {
+    border-color: #6aff00;
+    background-color: #6aff00;
+  }
+  .test-img.v-rkstedssc {
+    border-color: #ffd000;
+    background-color: #ffd000;
+  }
+  .test-img.momentum-cafe {
+    border-color: #df74fc;
+    background-color: #df74fc;
+  }
+  .test-img.skraateater {
+    border-color: red;
+    background-color: red;
+  }
+  .momentum-kort {
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    color: white;
+  }
+  .tekst-titel {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .ingen-knap {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .momentumcafe {
+    position: relative;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .forestilling-u-streg {
+    border-bottom: 0px none #a3ccd6;
+    background-color: rgba(163, 204, 214, 0.2);
+  }
+  .billettertekst {
+    display: block;
+    width: 90%;
+    margin: 15px auto 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-align: left;
+  }
+  .forestilling11 {
+    margin-left: 0px;
+  }
+  .luk {
+    display: block;
+    margin-top: 2px;
+    margin-right: 5px;
+    float: right;
+    clear: none;
+  }
+  .map2 {
+    margin-right: 0px;
+    padding-top: 0px;
+  }
+  .detskrateater {
+    padding: 17px 35px 0px;
+  }
+  .tekst-kort-adresser {
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    color: white;
+  }
+  .nav-menu-bredde {
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 60%;
+    margin-top: 44px;
+    margin-left: 0px;
+    float: right;
+    clear: none;
+  }
+  .flere-linier-program {
+    text-align: right;
+    list-style-type: none;
+  }
+  .home {
+    margin-top: 0px;
+  }
+  .billet {
+    color: #0008f7;
+    text-decoration: underline;
+  }
+  .stem-overskrift {
+    padding-top: 0px;
+    direction: ltr;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    list-style-type: none;
+  }
+  .stem-overskrift.centreret {
+    text-align: center;
+  }
+  .stem {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    clear: none;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    text-align: right;
+    list-style-type: none;
+  }
+  .stemmeboks {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: 38px;
+    float: none;
+  }
+  .stemmeboksen {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    clear: none;
+  }
+  .stemmer-kke {
+    display: block;
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+    float: none;
+  }
+  .stemmebokskolonne {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .stem2 {
+    display: inline;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

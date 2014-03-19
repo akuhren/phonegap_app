@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed Mar 19 2014 09:03:41 GMT+0000 (UTC) -->
+<html style="" class="w-mod-js w-mod-no-touch w-mod-video wf-oswald-n3-active wf-oswald-n4-active wf-oswald-n7-active wf-montserrat-n4-active wf-montserrat-n7-active wf-active" data-wf-site="532339cab69573570c00024c"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Teaterfestival - Billetter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="billetter-filer/normalize.css">
+  <link rel="stylesheet" type="text/css" href="billetter-filer/webflow.css">
+  <link rel="stylesheet" type="text/css" href="billetter-filer/scenoskop.css">
+  <script async="" src="billetter-filer/cbgapi.js"></script><script src="billetter-filer/webfont.js"></script>
+  <link href="billetter-filer/css.css" rel="stylesheet"><script>
+    WebFont.load({
+      google: {
+        families: ["Oswald:300,400,700","Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="billetter-filer/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <script type="text/javascript" href="http://code.jquery.com/jquery-latest.min.js"></script>
+<script gapi_processed="true" src="billetter-filer/plusone.js" type="text/javascript"></script></head>
+<body class="body-baggrund">
+  <div class="w-container">
+    <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400"><div class="w-nav-overlay" data-wf-ignore=""></div></div>
+  </div>
+  <div class="logo-baggrund">
+    <img class="logo" src="billetter-filer/Scenoskop-logo-br300px.png" alt="52f9203d129e615e140000d2_Scenoskop-logo-br300px.png">
+  </div>
+  <div class="bund">
+    <h3>BILLETTER</h3>
+  </div>
+  <div class="w-container navigation-bar">
+    <div class="w-nav" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
+      <div class="w-container navigation-bar navbarstreg navbaringenstreg">
+        <a class="w-clearfix w-inline-block luk" href="file:///Users/anderskirkuhrenholt/Documents/DATS-open%20source/scenoskop160314/build/index.html">
+          <img class="luk" src="billetter-filer/glyphicons_207_remove_2.png" alt="Luk">
+        </a>
+        <a class="w-nav-brand" href="file:///Users/anderskirkuhrenholt/Documents/DATS-open%20source/scenoskop160314/build/index.html">
+          <img class="tilbagepil" src="billetter-filer/glyphicons_020_home.png" alt="532819bb51afcf551e00056d_glyphicons_020_home.png">
+        </a>
+      </div>
+    <div class="w-nav-overlay" data-wf-ignore=""></div></div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="billettertekst">Alle forestillinger på Scenoskop Teaterfestival er gratis.
+        <br>
+        <br>Men hvis du vil være sikker på at få en plads, kan du hente 
+en billet via ticketeasy. Det kræver selvfølgelig, at du kan komme på 
+nettet med din mobil telefon.
+        <br>
+        <br>Udover her på siden findes der også en billet knap ved hver 
+forestilling i menuenpunktet FORESTILLINGER. Via knappen kommer du til 
+hele Scenoskops billetbestilling.</div><a class="button billetknap billetmenu" href="#" onclick="window.open('http://test.ticketeasy.dk/', '_system');">Billetter</a>
+    </div>
+    <div class="billettertekst">Du kan også gå direkte til den enkelte forestilling for at bestille, ved at klikke på linket&nbsp;<span class="billet">Billet</span>&nbsp;udfor hver enkelt forestilling.&nbsp;</div>
+  </div>
+  <script type="text/javascript" src="billetter-filer/jquery.js"></script>
+  <script type="text/javascript" src="billetter-filer/webflow.js"></script>
+  <script type="text/javascript" src="phonegap.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        $('.beskrivelse').hide();
+    	$('.vis-mere').bind("touchstart", function(){
+    	    //alert("1");
+    		var no = this.id.slice(-1);
+    	    var bt_text = ($('#beskrivelse'+no).css('display') == "none") ? "Luk" : "Vis mere...";
+    		$('#beskrivelse'+no).slideToggle("fast");
+    	    $(this).html(bt_text);
+    	});
+    });
+  </script>
+
+</body></html>
