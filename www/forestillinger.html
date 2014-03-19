@@ -1025,16 +1025,28 @@ Trappehave, <a href="https://www.facebook.com/people/Emma-C%C3%A6cilie-%C3%98str
     	$('.vis-mere').click(function(){
 
     		var no = this.id.slice(-2);
-    	    var bt_text;
-		if($('#beskrivelse'+no).css('display') == "none"){
-			bt_text = "Luk";
-		    $('html,body').animate({scrollTop: $("#overskrift"+no).offset().top}, 'slow');
-		} else {
-			bt_text = "Vis mere...";
-		}
-    		$('#beskrivelse'+no).slideToggle("fast");
-    	    $(this).html(bt_text);
-					return false;
+
+    	    // test CSS3-transition
+			if(no != "03"){
+				var bt_text;
+				if($('#beskrivelse'+no).css('display') == "none"){
+					bt_text = "Luk";
+				    $('html,body').animate({scrollTop: $("#overskrift"+no).offset().top}, 'slow');
+				} else {
+					bt_text = "Vis mere...";
+				}
+    			$('#beskrivelse'+no).slideToggle("fast");
+    	    	$(this).html(bt_text);
+			} else {
+				if($('#beskrivelse'+no).css('display') == "none"){
+					$("#beskrivelse"+no).css("display", "block");
+	    	    	$(this).html("Luk");
+				} else {
+					$("#beskrivelse"+no).css("display", "none");
+	    	    	$(this).html("Vis mere...");
+				}
+			}
+			return false;
     	});
     });
   </script>

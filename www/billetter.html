@@ -61,17 +61,4 @@ hele Scenoskops billetbestilling.</div><a class="button billetknap billetmenu" h
   <script type="text/javascript" src="phonegap.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
 
-  <script>
-    $(document).ready(function() {
-        $('.beskrivelse').hide();
-    	$('.vis-mere').bind("touchstart", function(){
-    	    //alert("1");
-    		var no = this.id.slice(-1);
-    	    var bt_text = ($('#beskrivelse'+no).css('display') == "none") ? "Luk" : "Vis mere...";
-    		$('#beskrivelse'+no).slideToggle("fast");
-    	    $(this).html(bt_text);
-    	});
-    });
-  </script>
-
 </body></html>
