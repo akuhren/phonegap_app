@@ -1018,6 +1018,10 @@ Trappehave, <a href="https://www.facebook.com/people/Emma-C%C3%A6cilie-%C3%98str
 		$('.vis-mere').on('morph', function() {
 			var no = this.id.slice(-2);
 			$(this).attr("href", "");
+	  	  this.addEventListener("touchstart", onTouchStart); //Listen for the user to start touching
+	  	  this.addEventListener("touchmove", onTouchMove); //Listen for movement
+	  	  this.addEventListener("touchend", onTouchEnd); //Listen for the user to stop touching
+		  
 		});
 		
 		$('.vis-mere').trigger("morph");
@@ -1038,6 +1042,7 @@ Trappehave, <a href="https://www.facebook.com/people/Emma-C%C3%A6cilie-%C3%98str
     			$('#beskrivelse'+no).slideToggle("fast");
     	    	$(this).html(bt_text);
 			} else {
+				
 				if($('#beskrivelse'+no).css('display') == "none"){
 					$("#beskrivelse"+no).css("display", "block");
 				    $('html,body').animate({scrollTop: $("#overskrift"+no).offset().top}, 'slow');
@@ -1050,6 +1055,70 @@ Trappehave, <a href="https://www.facebook.com/people/Emma-C%C3%A6cilie-%C3%98str
 			return false;
     	});
     });
+	
+	
+
+
+	var	isTouching = false; //Flag for whether or not the user is currently touching the screen
+
+	//Iterate through the links
+	for(i=0; i<links.length; ++i) {
+	  links[i].addEventListener("touchstart", onTouchStart); //Listen for the user to start touching
+	  if(i==1) continue; //Skip "Item 2" â€” using as an example for click
+	  links[i].addEventListener("touchmove", onTouchMove); //Listen for movement
+	  links[i].addEventListener("touchend", onTouchEnd); //Listen for the user to stop touching
+	}
+	links[1].addEventListener("click",onTouchEnd);
+
+	/**
+	 * Fired when an item is being touched.
+	 */
+	function onTouchStart(e) {
+	  var item = e.currentTarget;
+	  if(isTouching) return;
+	  e.currentTarget.moved = false;
+	  console.log("Start: " + e.currentTarget.innerHTML);
+	  isTouching = true;
+  
+	  //iOS and Android do not redraw the view while they are scrolling.
+	  //This introduces a problem if the user very quickly swiped his/her finger to scroll.
+	  //The element would have been given the "active" class (being highlighted) and it would have
+	  //stayed highlighted even while scrolling (despite not having the active class anymore).
+	  //To get around that, we create our own very slight delay. Not perfect, nor ideal, but it generally does the job.
+	  setTimeout(function(){
+	    if(item.moved===false) { //Make sure the property exists and is false
+	      item.className = "active";
+	    }
+	  }, 50);
+	}
+	/**
+	 * Fired when the user moves his/her finger.
+	 * If we detect a move, we're not interested in the "tap" anymore
+	 */
+	function onTouchMove(e) {
+	  console.log("Move: " + e.currentTarget.innerHTML);
+	  e.currentTarget.moved = true;
+	  e.currentTarget.className = "";
+	}
+	/**
+	 * Fired when the touch has ended.
+	 * If e.currentTarget.moved is true, then the user moved his/her finger while
+	 * touching this item so we "cancel" the tap.
+	 */
+	function onTouchEnd(e) {
+	  var item = e.currentTarget;
+  
+	  console.log("Stop: " + item.innerHTML);
+	  isTouching = false;
+  
+	  if(!item.moved) { //Show the
+		  alert($item.id);
+	  }
+
+	  delete item.moved; //Don't need our flag anymore
+	}
+
+	
   </script>
 
 </body></html>
