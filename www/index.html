@@ -5,10 +5,14 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>Teaterfestival</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <meta name="format-detection" content="telephone=no" />
+
   <link rel="stylesheet" type="text/css" href="index-filer/normalize.css">
   <link rel="stylesheet" type="text/css" href="index-filer/webflow.css">
   <link rel="stylesheet" type="text/css" href="index-filer/scenoskop.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
   <script async="" src="index-filer/cbgapi.js"></script><script src="index-filer/webfont.js"></script>
   <link href="index-filer/css.css" rel="stylesheet"><script>
     WebFont.load({
@@ -22,10 +26,6 @@
   <script type="text/javascript" href="http://code.jquery.com/jquery-latest.min.js"></script>
 <script gapi_processed="true" src="index-filer/plusone.js" type="text/javascript"></script></head>
 <body>
-  <div id="deviceready" class="blink">
-      <p class="event listening">Connecting to Device</p>
-      <p class="event received">Device is Ready</p>
-  </div>
   <div id="startside" style="display: none">
 	  <div class="logo-baggrund">
 	    <img class="logo" src="index-filer/Scenoskop-logo-br300px.png" alt="52f9203d129e615e140000d2_Scenoskop-logo-br300px.png">
@@ -43,14 +43,11 @@
      
 	 app.initialize();
 		 
-	function onLoad() {
-		document.addEventListener(‘deviceready’, onDeviceReady, false);
-	}
 	
 	
-	function onDeviceReady() {
+	$(document).ready(function() {
 		$("#startside").css("display", "visible");
-	}
+	});
   
   </script>
 
