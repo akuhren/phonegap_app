@@ -1022,7 +1022,7 @@ Trappehave, <a href="https://www.facebook.com/people/Emma-C%C3%A6cilie-%C3%98str
 		
 		$('.vis-mere').trigger("morph");
 		
-    	$('.vis-mere').click(function(){
+    	$('.vis-mere').bind("touchstart", function(){
 
     		var no = this.id.slice(-2);
 
@@ -1040,6 +1040,7 @@ Trappehave, <a href="https://www.facebook.com/people/Emma-C%C3%A6cilie-%C3%98str
 			} else {
 				if($('#beskrivelse'+no).css('display') == "none"){
 					$("#beskrivelse"+no).css("display", "block");
+				    $('html,body').animate({scrollTop: $("#overskrift"+no).offset().top}, 'slow');
 	    	    	$(this).html("Luk");
 				} else {
 					$("#beskrivelse"+no).css("display", "none");
