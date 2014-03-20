@@ -29,6 +29,8 @@
     -->
     <preference name="permissions"                value="none"/>
 
+	<preference name="DisallowOverscroll" value="true" />
+	
     <!-- Customize your app and platform with the preference element. -->
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
     <preference name="orientation"                	value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -88,5 +90,7 @@
 		
 	<gap:plugin name="org.apache.cordova.splashscreen" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	
+
 
 </widget>
