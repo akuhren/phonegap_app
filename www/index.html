@@ -47,7 +47,10 @@
 	 app.initialize();
 		 
 	
-	
+	document.addEventListener('deviceready', function() {
+		navigator.splashscreen.hide();
+	});
+	 
 	$(document).ready(function() {
 		$("#loadscreen").remove();
 	});
