@@ -35,7 +35,12 @@
 	    <img class="logo" src="index-filer/Scenoskop-logo-br300px.png" alt="52f9203d129e615e140000d2_Scenoskop-logo-br300px.png">
 	  </div>
 	  <div class="bund">
-	    <div class="w-container bund1" style="margin-top: 0px"><a class="button menuknap" href="program.html">PROGRAM</a><a class="button menuknap" href="forestillinger.html">FORESTILLINGER</a><a class="button menuknap" href="billetter.html">BILLETTER</a><a class="button menuknap" href="kort.html">KORT</a><a class="button menuknap" href="publikumsafstemning.html">PUBLIKUMSAFSTEMNING</a>
+	    <div class="w-container bund1" style="margin-top: 0px">
+			<a class="button menuknap" href="program.html">PROGRAM</a>
+			<a class="button menuknap" href="forestillinger.html">FORESTILLINGER</a>
+			<a class="button menuknap" href="billetter.html">BILLETTER</a>
+			<a class="button menuknap" href="kort.html">KORT</a>
+			<a class="button menuknap" href="publikumsafstemning.html">PUBLIKUMSAFSTEMNING</a>
 	    </div>
 	  </div>
   <script type="text/javascript" src="js/jquery.js"></script>
@@ -43,12 +48,71 @@
   <script type="text/javascript" src="phonegap.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script>
-     
-	 app.initialize();
-
-	$(document).ready(function() {
-		navigator.splashscreen.hide();
-	});
+		
+		app.initialize();
+		
+		var isTouching;
+		
+		$(document).ready(function() {
+			navigator.splashscreen.hide();
+		});
+		
+		$('.menuknap').on('morph', function() {
+			$(this).data("link", $(this).attr("href"));
+			$(this).attr("href", "");
+		});
+		
+		$('.menuknap').trigger("morph");
+		
+		/**
+		 * Fired when an item is being touched.
+		 */
+		$('.menuknap').bind("touchstart", function(){
+		  if(isTouching) return false;
+		  $(this).data("moved", false);
+		
+		  isTouching = true;
+		  
+		  return false;
+		});
+		
+		
+		/**
+		 * Fired when the user moves his/her finger.
+		 * If we detect a move, we're not interested in the "tap" anymore
+		 */
+		$('.menuknap').bind("touchmove", function(){
+		  	$(this).data("moved", true);
+		  	return false;
+		});
+		
+		
+		/**
+		 * Fired when the touch has ended.
+		 * If e.currentTarget.moved is true, then the user moved his/her finger while
+		 * touching this item so we "cancel" the tap.
+		 */
+		$('.menuknap').bind("touchend", function(){
+		  	isTouching = false;
+		  	
+		  	if(!$(this).data("moved")) {
+				window.open($(this).data("link"), "_self");
+			}
+		  	
+		  	delete $(this).data("moved"); //Don't need our flag anymore
+		  	
+		  	return false;
+		});
+		
+		$('.ext_link').click(function(e) {
+			e.preventDefault();
+			var url = $(this).attr("href");
+			$(this).attr("href","");
+			window.open(url, "_system");
+			return false;
+		})
+		
+		$("#loadscreen").remove();
   
   </script>
 
